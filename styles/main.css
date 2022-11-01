@@ -596,7 +596,7 @@ iframe {
 
 .content-section__text {
   width: 70%;
-  color: var(--secondaryColor);
+  color: black;
   font: 600 20px Roboto, sans-serif;
   margin-bottom: 50px;
   transform: translate3d(0, 0, 0);
