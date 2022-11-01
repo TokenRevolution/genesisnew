@@ -193,6 +193,12 @@ html,body{
     #scaleCD{
         margin-left: 45%;    
       }
+   button{
+	font-size:1em;
+	background: orange;
+	padding: 2%;
+	border-radius: 5px;
+   }
     }
   @media only screen and (max-width:450px) and (min-width: 1px) {
     #titl{
@@ -200,7 +206,7 @@ html,body{
        font-size: 1em;
       }
       #scaleCD{
-        width: 70%;
+        width: 50%;
         margin-left: 28%;
         transform: scale(1.2);
         margin-top: -10%; 
@@ -222,8 +228,10 @@ html,body{
 	  <br>
 	  <br>
 	  <br>
-	      <button style="float:left">Buy genesis</button>
-	  <div id="scaleCD">
+	<div style="float:left; width:25%;" id="buygenesis">
+	      <button>Buy genesis</button>
+	</div>  
+	<div id="scaleCD">
          <div if="first" class="circular">
             <div class="inner"></div>
             <div class="outer"></div>
@@ -302,9 +310,12 @@ html,body{
                </div>
             </div>
          </div>
-	</div>    
+	</div>   
+	<div style="float:left, width:25%;" id="Earn Free Genesis">
+	<button >Earn Free Genesis</button>
+	</div>
+		
 	<div id="visit-counter">
-		<button style="float:left">Earn Free Genesis</button>
 			<div>The Number Of Genesis</div>
 			<div class="website-counter"></div>
 	</div>
