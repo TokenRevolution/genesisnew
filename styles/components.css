@@ -22,7 +22,7 @@
 
 .button--primary {
   background-color: var(--primaryColor);
-  color: var(--secondaryColor);
+  color: black;
   position: relative;
   z-index: 1;
 }
