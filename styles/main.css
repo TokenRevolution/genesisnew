@@ -584,6 +584,7 @@ iframe {
 .content-holder--left-align {
   text-align: left;
   flex-basis: 50%;
+  margin-left: 10%;
 }
 
 .content-section__title {
