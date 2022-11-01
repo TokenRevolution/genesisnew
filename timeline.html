@@ -1,0 +1,427 @@
+<html>
+  <head><title>TimeLine</title>
+  <style>
+body {
+  font-family: "Source Sans Pro", Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.75;
+  overflow-y:hidden;
+}
+
+#timeline {
+  display: flex;
+  background-color: #031625;
+}
+#timeline:hover .tl-item1 {
+  width: 23.3333%;
+}
+#timeline:hover .tl-item2 {
+  width: 23.3333%;
+}
+#timeline:hover .tl-item3 {
+  width: 23.3333%;
+}
+#timeline:hover .tl-item4 {
+  width: 23.3333%;
+}
+#contenuto{
+margin-top:200%;
+    }
+#contenuto1{
+margin-top:200%;
+    }
+#contenuto2{
+margin-top:200%;
+    }
+#contenuto3{
+margin-top:200%;
+    }
+    
+.tl-item1 {
+  transform: translate3d(0, 0, 0);
+  position: relative;
+  width: 25%;
+  height: 100vh;
+  min-height: 600px;
+  color: #fff;
+  overflow: hidden;
+  transition: width 0.5s ease;
+  background: url(1.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.tl-item2 {
+  transform: translate3d(0, 0, 0);
+  position: relative;
+  width: 25%;
+  height: 100vh;
+  min-height: 600px;
+  color: #fff;
+  overflow: hidden;
+  transition: width 0.5s ease;
+  background: url(2.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.tl-item3 {
+  transform: translate3d(0, 0, 0);
+  position: relative;
+  width: 25%;
+  height: 100vh;
+  min-height: 600px;
+  color: #fff;
+  overflow: hidden;
+  transition: width 0.5s ease;
+  background: url(3.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.tl-item4 {
+  transform: translate3d(0, 0, 0);
+  position: relative;
+  width: 25%;
+  height: 100vh;
+  min-height: 600px;
+  color: #fff;
+  overflow: hidden;
+  transition: width 0.5s ease;
+  background: url(4.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.tl-item1:before, .tl-item1:after {
+  transform: translate3d(0, 0, 0);
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+.tl-item2:before, .tl-item2:after {
+  transform: translate3d(0, 0, 0);
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+.tl-item3:before, .tl-item3:after {
+  transform: translate3d(0, 0, 0);
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+.tl-item4:before, .tl-item4:after {
+  transform: translate3d(0, 0, 0);
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+.tl-item1:after {
+  background: url(1.png);
+  opacity: 1;
+  transition: opacity 0.5s ease;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.tl-item2:after {
+  background: url(2.png);
+  opacity: 1;
+  transition: opacity 0.5s ease;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.tl-item3:after {
+  background: url(3.png);
+  opacity: 1;
+  transition: opacity 0.5s ease;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.tl-item4:after {
+  background: url(4.png);
+  opacity: 1;
+  transition: opacity 0.5s ease;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.tl-item1:hover {
+  width: 30% !important;
+}
+.tl-item2:hover {
+  width: 30% !important;
+}
+.tl-item3:hover {
+  width: 30% !important;
+}
+.tl-item4:hover {
+  width: 30% !important;
+}
+.tl-item1:hover:after {
+  opacity: 0;
+}
+.tl-item2:hover:after {
+  opacity: 0;
+}
+.tl-item3:hover:after {
+  opacity: 0;
+}
+.tl-item4:hover:after {
+  opacity: 0;
+}
+.tl-item1:hover:before {
+  opacity: 1;
+  transform: translate3d(0, 0, 0) translateY(0);
+  transition: opacity 1s ease, transform 1s ease 0.25s;
+}
+.tl-item2:hover:before {
+  opacity: 1;
+  transform: translate3d(0, 0, 0) translateY(0);
+  transition: opacity 1s ease, transform 1s ease 0.25s;
+}
+.tl-item3:hover:before {
+  opacity: 1;
+  transform: translate3d(0, 0, 0) translateY(0);
+  transition: opacity 1s ease, transform 1s ease 0.25s;
+}
+.tl-item4:hover:before {
+  opacity: 1;
+  transform: translate3d(0, 0, 0) translateY(0);
+  transition: opacity 1s ease, transform 1s ease 0.25s;
+}
+.tl-item1:hover .tl-content {
+  opacity: 1;
+  transform: translateY(0);
+  transition: all 0.75s ease 0.5s;
+}
+.tl-item2:hover .tl-content {
+  opacity: 1;
+  transform: translateY(0);
+  transition: all 0.75s ease 0.5s;
+}
+.tl-item3:hover .tl-content {
+  opacity: 1;
+  transform: translateY(0);
+  transition: all 0.75s ease 0.5s;
+}
+.tl-item4:hover .tl-content {
+  opacity: 1;
+  transform: translateY(0);
+  transition: all 0.75s ease 0.5s;
+}
+.tl-item1:hover .tl-bg {
+  filter: grayscale(0);
+}
+.tl-item2:hover .tl-bg {
+  filter: grayscale(0);
+}
+.tl-item3:hover .tl-bg {
+  filter: grayscale(0);
+}
+.tl-item4:hover .tl-bg {
+  filter: grayscale(0);
+}
+
+.tl-content {
+  transform: translate3d(0, 0, 0) translateY(25px);
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  margin: 0 1.618em;
+  top: 55%;
+  opacity: 0;
+}
+.tl-content h1 {
+  font-family: "Pathway Gothic One", Helvetica Neue, Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  color: #1779cf;
+  font-size: 1.44rem;
+  font-weight: normal;
+}
+
+.tl-year {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  z-index: 1;
+  border-top: 3px solid #e25303;
+  border-bottom: 3px solid #e25303;
+}
+.tl-year p {
+  font-family: "Pathway Gothic One", Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 1em;
+  height: auto;
+  width: auto;
+  color: white;
+  background: rgb(226 83 3 / 50%);
+  font-weight: bold;
+}
+.tl-bg {
+  transform: translate3d(0, 0, 0);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-size: cover;
+  background-position: center center;
+  transition: filter 0.5s ease;
+  filter: grayscale(100%);
+}
+  </style>
+  </head>
+  <body>
+    <section id="timeline">
+
+
+  <div class="tl-item1">
+<div class="tl-bg" style="background-image: url(https://www.wieland.com/assets/images/d/header_wieland_ny-1cdf09e4.jpg"></div>
+    <div id="phase1" onclick="primo()" class="tl-year">
+      <p class="f2 heading--sanSerif">GENESIS</p>
+    </div>
+    <div class="tl-content">
+      <p  id="contenuto">          
+        <ul style="text-align: left;padding: 26%;font-size: 1.1em;margin-top: -35%;">
+          <li>Sviluppo e distribuzione del contratto</li>
+          <li>Sito web prima versione e lancio sui social media</li>
+          <li> Creazione e costruzione della community  su telegram e figocoin.it</li>
+          <li>Referral, task e sondaggi per coinvolgere la community su specifiche decisioni</li>
+          <li>Coinvolgimento partner</li>
+          <li>Audit TechRate</li>
+        </ul>
+      </p>
+    </div>
+   <script>
+    function primo(){
+       document.getElementById("phase1").style.display = "none";
+       document.getElementById("phase2").style.display = "";
+       document.getElementById("phase3").style.display = "";
+       document.getElementById("phase4").style.display = "";
+       document.getElementById("contenuto").style.marginTop = "-100%";
+       document.getElementById("contenuto1").style.marginTop = "";
+       document.getElementById("contenuto2").style.marginTop = "";
+       document.getElementById("contenuto3").style.marginTop = "";
+}
+   </script>
+  </div>
+
+  <div class="tl-item2">
+    <div class="tl-bg" style="background-image: url(https://www.wieland.com/assets/images/6/kachel_careers_spot-eeeb207b.jpg)">
+    </div>
+    <div id="phase2" onclick="secondo()" class="tl-year" onclick="cambiami()">
+      <p class="f2 heading--sanSerif">BeGooD</p>
+    </div>
+    <div class="tl-content">
+      <p  id="contenuto1">          
+        <ul style="text-align: left;padding: 26%;font-size: 1.1em;margin-top: -35%;">
+          <li>Sviluppo e distribuzione del contratto</li>
+          <li>BeGood per la plastica</li>
+          <li>BeGood come pagamento nell’app Figorent</li>
+          <li>Campagne promozionali</li>
+          <li>Sponsorizzazioni</li>
+        </ul>
+      </p>
+    </div>
+   <script>
+    function secondo(){
+       document.getElementById("phase1").style.display = "";
+       document.getElementById("phase2").style.display = "none";
+       document.getElementById("phase3").style.display = "";
+       document.getElementById("phase4").style.display = "";
+       document.getElementById("contenuto").style.marginTop = "";
+       document.getElementById("contenuto1").style.marginTop = "-100%";
+       document.getElementById("contenuto2").style.marginTop = "";
+       document.getElementById("contenuto3").style.marginTop = ""; 
+     }
+   </script>
+  </div>
+
+  <div class="tl-item3">
+    
+    <div class="tl-bg" style="background-image: url(https://www.wieland.com/assets/images/2/home_slider_empowering_success_thenewbrandpage-c8c3fca2.jpg
+)"></div>
+    
+    <div id="phase3" onclick="terzo()" class="tl-year">
+      <p class="f2 heading--sanSerif">FigoCoin</p>
+    </div>
+    <div class="tl-content">
+      <p  id="contenuto2">
+        <ul style="text-align: left;padding: 26%;font-size: 1.1em;margin-top: -35%;">
+        <li>Sviluppo e distribuzione del contratto</li>
+        <li> private sale e prima collezione NFT</li>
+        <li>Presale 1 e 2 con seconda e terza collezione NFT</li>
+        <li>Staking</li>
+        <li>Influencer Marketing su Twitter, Telegram, youtube</li>
+        <li>Press release sui media main stream (tv, radio, giornali, ecc.)</li>
+        <li> Audit CERTIK</li>
+        <li> Partnership</li>
+        <li> Lancio del merchandising </li>
+      </ul>
+      </p>
+    </div>
+    <script>
+    function terzo(){
+       document.getElementById("phase1").style.display = "";
+       document.getElementById("phase2").style.display = "";
+       document.getElementById("phase3").style.display = "none";
+       document.getElementById("phase4").style.display = "";
+       document.getElementById("contenuto").style.marginTop = "";
+       document.getElementById("contenuto1").style.marginTop = "";
+       document.getElementById("contenuto2").style.marginTop = "-100%";
+       document.getElementById("contenuto3").style.marginTop = "";
+     }
+   </script>
+  </div>
+
+
+    <div class="tl-item4">
+    <div class="tl-bg" style="background-image: url(https://www.wieland.com/assets/images/9/responsibility_3-54e5a756.jpg
+)"></div>
+    <div id="phase4" onclick="quarto()" class="tl-year">
+      <p class="f2 heading--sanSerif">Figo Launch</p>
+    </div>
+    <div class="tl-content">
+      <p id="contenuto3">     
+        <ul style="text-align: left;padding: 26%;font-size: 1.1em;margin-top: -35%;">
+        <li>Listing direttamente su uno dei maggiori CEX (le procedure di approvazione sono attualmente in corso con alcuni dei maggiori CEX)
+        <li>Listing su CoinMarketCap e CoinGecko</li>
+        <li>Progetto scuole</li>
+        <li>Lancio management game</li>
+        <li>metaverso </li>
+        </ul>
+      </p>
+    </div>
+    <script>
+    function quarto(){
+       document.getElementById("phase1").style.display = "";
+       document.getElementById("phase2").style.display = "";
+       document.getElementById("phase3").style.display = "";
+       document.getElementById("phase4").style.display = "none";
+       document.getElementById("contenuto").style.marginTop = "";
+       document.getElementById("contenuto1").style.marginTop = "";
+       document.getElementById("contenuto2").style.marginTop = "";
+       document.getElementById("contenuto3").style.marginTop = "-100%";
+
+    }
+   </script>
+  </div>
+</section>
+  </body>
+</html>
