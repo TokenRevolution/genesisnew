@@ -168,7 +168,7 @@ canvas {
   justify-content: center;
   align-items: center;
   height: 100%;
-  background: var(--opaqueBackground);
+  background: rgb(255,255,255,0.7);
 }
 
 .menu-list {
@@ -178,7 +178,7 @@ canvas {
 }
 
 .menu-list__item {
-  color: var(--secondaryColor);
+  color: #008728;
   position: relative;
   font: 900 40px Roboto, sans-serif;
   letter-spacing: var(--letterSpacing);
