@@ -706,7 +706,7 @@ iframe {
 }
 
 .content-service__text {
-  color: var(--secondaryColor);
+  color:#008728;
   font: 800 20px Roboto, sans-serif;
   margin-top: 20px;
   text-transform: uppercase;
