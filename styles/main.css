@@ -337,7 +337,7 @@ iframe {
 }
 
 .fixed-content-header__logo {
-  color: var(--secondaryColor);
+  color: #008728;
   font: 900 35px Roboto, sans-serif;
   letter-spacing: 20px;
   user-select: none;
@@ -588,7 +588,7 @@ iframe {
 
 .content-section__title {
   position: relative;
-  color: var(--secondaryColor);
+  color: #008728;
   font: 800 40px Roboto, sans-serif;
   transform: translate3d(0, 0, 0);
   transition: var(--contentTransitionDuration) 300ms var(--contentTransitionBezier);
