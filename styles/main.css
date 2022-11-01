@@ -87,8 +87,6 @@ canvas {
 }
 
 .text-indent {
-  border-left: 3px solid var(--primaryBoldColor);
-  padding-left: 20px;
 }
 
 .emphasize {
