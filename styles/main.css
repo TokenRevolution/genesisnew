@@ -52,8 +52,8 @@ ul {
 }
 
 li {
-  color: var(--secondaryColor);
-  font: 600 15px Audiowide, sans-serif;
+  color: white;
+  font: 600 10px Audiowide, sans-serif;
   text-align: left;
 }
 li::before {
