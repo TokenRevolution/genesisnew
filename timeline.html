@@ -7,11 +7,13 @@ body {
   font-size: 16px;
   line-height: 1.75;
   overflow-y:hidden;
+  background: linear-gradient(45deg, #e25303, #008728);
 }
 
 #timeline {
   display: flex;
   background-color: #031625;
+  height:70%;
 }
 #timeline:hover .tl-item1 {
   width: 23.3333%;
@@ -42,12 +44,12 @@ margin-top:200%;
   transform: translate3d(0, 0, 0);
   position: relative;
   width: 25%;
-  height: 100vh;
+  height: 100%;
   min-height: 600px;
   color: #fff;
   overflow: hidden;
   transition: width 0.5s ease;
-  background: url(1.jpeg);
+  background: url(4.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -56,12 +58,12 @@ margin-top:200%;
   transform: translate3d(0, 0, 0);
   position: relative;
   width: 25%;
-  height: 100vh;
+  height: 100%;
   min-height: 600px;
   color: #fff;
   overflow: hidden;
   transition: width 0.5s ease;
-  background: url(2.jpeg);
+  background: url(4.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -70,12 +72,12 @@ margin-top:200%;
   transform: translate3d(0, 0, 0);
   position: relative;
   width: 25%;
-  height: 100vh;
+  height: 100%;
   min-height: 600px;
   color: #fff;
   overflow: hidden;
   transition: width 0.5s ease;
-  background: url(3.jpeg);
+  background: url(4.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -84,7 +86,7 @@ margin-top:200%;
   transform: translate3d(0, 0, 0);
   position: relative;
   width: 25%;
-  height: 100vh;
+  height: 100%;
   min-height: 600px;
   color: #fff;
   overflow: hidden;
@@ -267,7 +269,7 @@ margin-top:200%;
 }
 .tl-year p {
   font-family: "Pathway Gothic One", Helvetica Neue, Helvetica, Arial, sans-serif;
-  font-size: 1em;
+  font-size: 3em;
   height: auto;
   width: auto;
   color: white;
@@ -292,20 +294,22 @@ margin-top:200%;
     <section id="timeline">
 
 
-  <div class="tl-item1">
+  <div class="tl-item1" onmouseover="primo()">
 <div class="tl-bg" style="background-image: url(https://www.wieland.com/assets/images/d/header_wieland_ny-1cdf09e4.jpg"></div>
-    <div id="phase1" onmouseover="primo()" class="tl-year">
-      <p class="f2 heading--sanSerif">GENESIS</p>
+    <div id="phase1" class="tl-year">
     </div>
     <div class="tl-content">
       <p  id="contenuto">          
-        <ul style="text-align: left;padding: 26%;font-size: 1.1em;margin-top: -35%;">
-          <li>Sviluppo e distribuzione del contratto</li>
-          <li>Sito web prima versione e lancio sui social media</li>
-          <li> Creazione e costruzione della community  su telegram e figocoin.it</li>
-          <li>Referral, task e sondaggi per coinvolgere la community su specifiche decisioni</li>
-          <li>Coinvolgimento partner</li>
+        <ul style="text-align: left;padding: 26%;font-size: 0.8em;margin-top: -35%;">
+	    <li style="font-size:1.5em;list-style:none;">GENESIS</li>
+          <li>Sviluppo e distribuzione del contratto GENESIS (GNS)</li>
+          <li>Lancio della piattaforma figocoin.it</li>
+          <li>Apertura di tutti i canali e lancio sui social media</li>
+	    <li>Creazione e costruzione della community su telegram e figocoin.it</li>
+          <li>Attivazione referral, task e sondaggi per coinvolgere la community su specifiche decisioni</li>
+          <li>Coinvolgimento partner istituzionali</li>
           <li>Audit TechRate</li>
+	    <li>Raggiungimento delle prime 10.000 adesioni</li>
         </ul>
       </p>
     </div>
@@ -323,20 +327,22 @@ margin-top:200%;
    </script>
   </div>
 
-  <div class="tl-item2">
+  <div class="tl-item2"  onmouseover="secondo()">
     <div class="tl-bg" style="background-image: url(https://www.wieland.com/assets/images/6/kachel_careers_spot-eeeb207b.jpg)">
     </div>
-    <div id="phase2" onmouseover="secondo()" class="tl-year" onclick="cambiami()">
-      <p class="f2 heading--sanSerif">BeGooD</p>
+    <div id="phase2" class="tl-year" onclick="cambiami()">
     </div>
     <div class="tl-content">
       <p  id="contenuto1">          
-        <ul style="text-align: left;padding: 26%;font-size: 1.1em;margin-top: -35%;">
-          <li>Sviluppo e distribuzione del contratto</li>
-          <li>BeGood per la plastica</li>
-          <li>BeGood come pagamento nell’app Figorent</li>
+        <ul style="text-align: left;padding: 26%;font-size: 0.8em;margin-top: -35%;">
+          <li style="font-size:1.5em;list-style:none;">BeGood</li>
+          <li>Sviluppo e distribuzione del contratto BeGood (BGD)</li>
+	    <li>Installazione del nostro servizio per gli ecocompattatori</li>
+          <li>Utilizzo BeGood come premio in cambio della plastica</li>
+          <li>Utilizzo BeGood come pagamento nell’app Figorent</li>
           <li>Campagne promozionali</li>
           <li>Sponsorizzazioni</li>
+	    <li>Raggiungimento delle prime 30.000 adesioni</li>
         </ul>
       </p>
     </div>
@@ -354,25 +360,24 @@ margin-top:200%;
    </script>
   </div>
 
-  <div class="tl-item3">
+  <div class="tl-item3" onmouseover="terzo()">
     
     <div class="tl-bg" style="background-image: url(https://www.wieland.com/assets/images/2/home_slider_empowering_success_thenewbrandpage-c8c3fca2.jpg
 )"></div>
     
-    <div id="phase3" onmouseover="terzo()" class="tl-year">
-      <p class="f2 heading--sanSerif">FigoCoin</p>
+    <div id="phase3"  class="tl-year">
     </div>
     <div class="tl-content">
       <p  id="contenuto2">
-        <ul style="text-align: left;padding: 26%;font-size: 1.1em;margin-top: -35%;">
-        <li>Sviluppo e distribuzione del contratto</li>
-        <li> private sale e prima collezione NFT</li>
-        <li>Presale 1 e 2 con seconda e terza collezione NFT</li>
-        <li>Staking</li>
+        <ul style="text-align: left;padding: 26%;font-size: 0.8em;margin-top: -35%;">
+	  <li style="font-size:1.5em;list-style:none;">Figo Coin</li>
+        <li>Sviluppo e distribuzione del contratto Figo Coin (FIGO)</li>
+        <li>Prima Private sale e Prima collezione NFT</li>
+        <li>Prima e seconda presale per terza collezione NFT</li>
         <li>Influencer Marketing su Twitter, Telegram, youtube</li>
         <li>Press release sui media main stream (tv, radio, giornali, ecc.)</li>
         <li> Audit CERTIK</li>
-        <li> Partnership</li>
+        <li> Attivazioni delle Partnership</li>
         <li> Lancio del merchandising </li>
       </ul>
       </p>
@@ -392,20 +397,22 @@ margin-top:200%;
   </div>
 
 
-    <div class="tl-item4">
+    <div class="tl-item4" onmouseover="quarto()">
     <div class="tl-bg" style="background-image: url(https://www.wieland.com/assets/images/9/responsibility_3-54e5a756.jpg
 )"></div>
-    <div id="phase4" onmouseover="quarto()" class="tl-year">
-      <p class="f2 heading--sanSerif">Figo Launch</p>
+    <div id="phase4"  class="tl-year">
     </div>
     <div class="tl-content">
       <p id="contenuto3">     
-        <ul style="text-align: left;padding: 26%;font-size: 1.1em;margin-top: -35%;">
-        <li>Listing direttamente su uno dei maggiori CEX (le procedure di approvazione sono attualmente in corso con alcuni dei maggiori CEX)
+        <ul style="text-align: left;padding: 26%;font-size: 0.8em;margin-top: -35%;">
+	  <li style="font-size:1.5em;list-style:none;">Figo Coin Launch</li>	  
+        <li>Listing direttamente su uno dei maggiori CEX (le procedure di approvazione sono attualmente in corso con alcuni dei maggiori CEX)</li>
+        <li>Quarta collezione NFT</li>
         <li>Listing su CoinMarketCap e CoinGecko</li>
-        <li>Progetto scuole</li>
-        <li>Lancio management game</li>
-        <li>metaverso </li>
+        <li>Attivazione del progetto scuole</li>
+        <li>Lancio management game a sfondo ecologico</li>
+        <li>Costruzione del FIgoVerse, metaverso a sfondo ecologico</li>
+	  <li>Raggiungimento delle 100.000 adesioni</li>
         </ul>
       </p>
     </div>
@@ -424,5 +431,9 @@ margin-top:200%;
    </script>
   </div>
 </section>
-  </body>
+<br>
+<br>
+<button style="border-radius: 10px;border:none; font-size:1.5em; background:#e25303; float:left; width: 30%; padding:2%;margin-left:10%;margin-right:10%;"><a style="text-decoration:none;color:white;" href="https://devemilio96.github.io/figo-stable-to-gns-bgd/">COMPRA GENESIS</a></button>
+<button style="border-radius: 10px;border:none; font-size:1.5em; background:#e25303; float:left; width: 30%; padding:2%;margin-left:10%;"><a style="text-decoration:none;color:white;" href="https://gnswhitelist.tkrev.com/">GUADAGNA GENESIS GRATIS</a></button>  
+</body>
 </html>
