@@ -38,11 +38,11 @@
   color: var(--secondaryColor);
 }
 .slider__item-name {
-  font: 500 25px Roboto, sans-serif;
+  font: 500 15px Roboto, sans-serif;
   margin: 0;
 }
 .slider__item-position {
-  font: 900 20px Roboto, sans-serif;
+  font: 900 11px Roboto, sans-serif;
   margin: 0;
   letter-spacing: 3px;
   color: var(--primaryColor);
