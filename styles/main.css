@@ -590,7 +590,7 @@ iframe {
 .content-section__text {
   width: 70%;
   color: black;
-  font: 600 20px Audiowide, sans-serif;
+  font: 600 1.02em Audiowide, sans-serif;
   margin-bottom: 50px;
   transform: translate3d(0, 0, 0);
   transition: var(--contentTransitionDuration) 500ms var(--contentTransitionBezier);
